@@ -1,77 +1,125 @@
-body{
-    display: grid;
-    grid-template-areas:"header header header header"
-                        "hero hero hero hero"
-                        "about about about about"
-                        "services services services services"
-                        "projects projects projects projects"
-                        "footer footer footer footer";
-    grid-template-columns: repeat(4, 1fr);
-    font-size: 1 rem;
-    font-family: 'Roboto',sans-serif;
-    font-weight: 400;
+body {
+	display: grid;
+	grid-template-areas:
+		"header header header header"
+		"hero hero hero hero"
+		"about about about about"
+		"services services services services"
+		"projects projects projects projects"
+		"footer footer footer footer";
+	grid-template-columns: repeat(4, 1fr);
+	font-size: 1 rem;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
 }
-
 
 /* HEADER */
 
-.header{
-    grid-area: header;
-    background-color: #fff;
+.header {
+	grid-area: header;
+	background-color: #fff;
 }
 
-.header .header-container{
-    display: flex;
-    padding: 20px 40px;
-    justify-content:space-between;
-    align-items: center;
-    min-height: 75px; /* altura min para a versão mobile */
+.header .header-container {
+	display: flex;
+	padding: 20px 40px;
+	justify-content: space-between;
+	align-items: center;
+	min-height: 75px; /* altura min para a versão mobile */
 }
 
-.header h1{
-    font-size: calc(30rem/16);
-    font-weight: 700;
-    transition: 1s;
-
+.header h1 {
+	font-size: calc(30rem / 16);
+	font-weight: 700;
+	transition: 1s;
 }
 
-.header a:hover h1{
-    color: coral;
-    /* transition: 0.3s; */
+.header a:hover h1 {
+	color: coral;
+	/* transition: 0.3s; */
 }
-
 
 /* HERO  */
-.hero{
-    grid-area: hero;
-    background-color: red;
+.hero {
+	grid-area: hero;
+	height: 89vh;
+	background: url("../images/lemons.jpg") center center no-repeat;
+	background-size: cover;
+	/* background-color: red; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
 
+.hero::after {
+	content: url("../images/seta_preta.png");
+	position: absolute;
+	/* height: 35px; */
+	bottom: 20px;
+	animation: downarrow 0.7s infinite alternate ease-in-out;
+}
+
+.hero h2 {
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: calc(40rem / 16);
+}
+
+@-webkit-keyframes downarrow {
+	0% {
+		-webkit-transform: translateY(0);
+	}
+
+	100% {
+		-webkit-transform: translateY(0.4em);
+		opacity: 0.4;
+	}
+}
+
+@media (max-width: 600px) {
+	.hero {
+		height: 60vh;
+	}
+
+	.hero h2 {
+		font-size: 20px;
+		/* color: #fff; */
+	}
+
+	.hero::after {
+		content: "";
+        background-image: url(../images/seta_preta.png);
+        background-position: bottom;
+        background-size: cover;
+		display: inline-block;
+
+		/*size of your image*/
+		height: 25px;
+		width: 25px;
+	}
 }
 
 /* ABOUT  */
-.about{
-    grid-area: about;
-    background-color: black;
-
+.about {
+	grid-area: about;
+	background-color: black;
 }
 
 /* SERVICES  */
-.services{
-    grid-area: services;
-    background-color: yellow;
-
+.services {
+	grid-area: services;
+	background-color: yellow;
 }
 
 /* PROJETCS */
-.projects{
-    grid-area: projects;
-    background-color: gray;
-
+.projects {
+	grid-area: projects;
+	background-color: gray;
 }
 
 /* FOOTER */
-.footer{
-    grid-area: footer;
-    background-color: pink;
-
+.footer {
+	grid-area: footer;
+	background-color: pink;
 }
