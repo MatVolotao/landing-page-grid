@@ -1,21 +1,37 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
-    font-weight: 300;
-    box-sizing: border-box;
+/* 
+  Reset geral para garantir consistência entre navegadores. 
+  Remove margens, espaçamentos internos e configurações padrão que variam.
+*/
+* {
+	margin: 0; /* Remove as margens padrão de todos os elementos */
+	padding: 0; /* Remove os espaçamentos internos padrão */
+	border: none; /* Remove qualquer borda padrão de elementos */
+	outline: none; /* Remove contornos visuais padrão (especialmente em inputs) */
+	font-weight: 300; /* Define um peso de fonte leve para consistência */
+	box-sizing: border-box; /* Inclui bordas e padding no tamanho total do elemento */
 }
 
-a{
-    text-decoration: none;
-    color: black;
+/* 
+  Estilo padrão para links (<a>), removendo sublinhados e cores padrão. 
+  Mantém a aparência neutra.
+*/
+a {
+	text-decoration: none; /* Remove sublinhados dos links */
+	color: black; /* Define a cor preta para links por padrão */
 }
 
-ul{
-    list-style: none;
+/* 
+  Estilo padrão para listas não ordenadas (<ul>), removendo marcadores. 
+  Facilita o uso de estilos personalizados para listas.
+*/
+ul {
+	list-style: none; /* Remove marcadores de lista (bullets) */
 }
 
-img{
-    max-width: 100%;
+/* 
+  Estilo padrão para imagens (<img>), garantindo que elas não ultrapassem o container. 
+  Isso ajuda na responsividade e evita imagens "quebradas".
+*/
+img {
+	max-width: 100%; /* Define o tamanho máximo da imagem como o tamanho do container */
 }
