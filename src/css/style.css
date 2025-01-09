@@ -17,7 +17,31 @@ body{
 
 .header{
     grid-area: header;
-    background-color: aqua;
+    background-color: #fff;
+}
+
+.header .header-container{
+    display: flex;
+    padding: 20px 40px;
+    justify-content:space-between;
+    align-items: center;
+    min-height: 75px; /* altura min para a versão mobile */
+}
+
+.header h1{
+    font-size: calc(30rem/16);
+    font-weight: 700;
+    transition: 1s;
+
+}
+
+.header a:hover h1{
+    color: coral;
+    /* transition: 0.3s; */
+}
+
+#menu-hamburguer{
+    display: none;
 }
 
 /* HERO  */

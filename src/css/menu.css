@@ -1,0 +1,17 @@
+.header nav ul{
+    display: flex;
+}
+
+.header nav ul li a{
+    font-size: var(--20px);
+    font-weight: 500;
+    padding: 10px 30px;
+    border-radius: 50px;
+    /* border: 1px solid red; */
+}
+
+.header nav ul li a:hover{
+    color: #fff;
+    background-color: coral;
+    transition: 0.5s;
+}

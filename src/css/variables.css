@@ -1,4 +1,4 @@
-html {
+:root {
 	--14px: 0.875rem;
 	--15px: 0.9375rem;
 	--16px: 1rem;
@@ -7,4 +7,5 @@ html {
 	--19px: 1.1875rem;
 	--20px: 1.25rem;
 	--21px: 1.3125rem;
+    --max-width: 1920px;
 }
