@@ -266,6 +266,54 @@ body {
 
 /* FOOTER */
 .footer {
-	grid-area: footer;
-	background-color: pink;
+    grid-area: footer;
+    display: flex;
+    background-color: lightgreen;  
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 0;
 }
+
+.footer h4 {
+    font-weight: 700;
+    font-size: calc(25rem/16);
+    margin-bottom: 15px;
+}
+
+.footer nav {
+    margin: 50px 0;
+}
+
+.footer nav ul {
+    display: flex;
+    justify-content: center;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.footer nav ul li a {
+    margin: 20px;
+    font-weight: 500;
+    font-synthesis: var(--20px);
+    transition: 0.3s ease-in-out;
+}
+
+.footer nav ul li a:hover {
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer .social i {
+    font-size: var(--20px);
+    transition: 0.3s;
+}
+
+.footer .social a {
+    margin: 20px;
+}
+
+.footer .social a:hover {
+    color: #fff;
+}
+
+
