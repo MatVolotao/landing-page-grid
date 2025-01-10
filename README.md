@@ -34,7 +34,7 @@ Basta abrir o arquivo `index.html` em um navegador web para visualizar a landing
 <img src="./media/LandingPage.png" alt= "tela inicial do projeto">
 
 ## Demonstração em Vídeo
-<img src="./media/LandingPage.gif" alt= "tela inicial do projeto">
+<img src="./media/LandingPagegif.gif" alt= "tela inicial do projeto">
 
 
 # Contato
